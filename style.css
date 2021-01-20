@@ -1,6 +1,7 @@
 body {
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
 }
 
 *, *::before, *::after {
@@ -479,7 +480,7 @@ body {
         margin-left: 191px;
     }
     .news-bg-layer {
-        background-image: url(/img/news/riding.jpg);
+        background-image: url(img/news/riding.jpg);
         background-repeat: no-repeat;
         background-position: 100% 20%;
         background-size: 60%;
@@ -626,7 +627,7 @@ body {
         -moz-transform: translate(-50%, -50%);
         -ms-transform: translate(-50%, -50%);
         -o-transform: translate(-50%, -50%);
-}
+    }
     .nav-section {
         margin-top: 495px;
     }
@@ -700,7 +701,7 @@ body {
         -o-transform: translate(-50%, 65%);
     }
     .nav-section {
-        margin-top: 630px;
+        margin-top: 665px;
         margin-bottom: 25px;
     }
     .news-topic-text {
