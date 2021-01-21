@@ -6,7 +6,6 @@ body {
 
 *, *::before, *::after {
     outline: none;
-    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     padding: 0;
     margin: 0;
@@ -78,9 +77,6 @@ body {
     background-repeat: no-repeat;
     background-size: 0 1px, 100% 1px;
     padding-bottom: 3px;
-    -webkit-transition: .5s ease-in-out;
-    -o-transition: .5s ease-in-out;
-    transition: .5s ease-in-out;
     cursor: pointer;
 }
 
@@ -115,30 +111,28 @@ body {
 }
 
 .nav-section {
-    margin-top: 75px;
     max-width: 1240px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 119px;
+    margin: 75px auto 119px;
     flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     justify-content: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
 }
 
 .nav {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
     justify-content: center;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     position: relative;
     float: left;
 }
@@ -481,6 +475,7 @@ body {
     }
     .news-bg-layer {
         background-image: url(img/news/riding.jpg);
+        /* assets/images/news/riding.jpg */
         background-repeat: no-repeat;
         background-position: 100% 20%;
         background-size: 60%;
@@ -522,8 +517,8 @@ body {
     }
     .hotel-img-1, .hotel-img-2 {
         margin-top: 55px;
-        width: 154px;
-        height: 197px;
+        width: 145px;
+        height: 188px;
     }
     .hotel-img-3 {
         margin-top: 15px;
@@ -540,7 +535,7 @@ body {
         margin-left: 85px;
     }
     .hotel-img-2 {
-        margin-right: 85px;
+        margin-right: 80px;
     }
     .nav-img {
         width: 114px;
@@ -589,47 +584,19 @@ body {
     .info-topic {
         margin-left: -210px;
     }
-    .hotel-img-1 {
-        margin-top: 90px;
-        margin-left: 90 auto;
-        margin-left: auto;
-        left: 50%;
-        transform: translate(-50%, 0%);
-        -webkit-transform: translate(-50%, 0%);
-        -moz-transform: translate(-50%, 0%);
-        -ms-transform: translate(-50%, 0%);
-        -o-transform: translate(-50%, 0%);
-    }
     .hotel-img-2 {
-        margin-left: 90 auto;
-        margin-left: auto;
-        left: 50%;
-        transform: translate(-108%, 0%);
-        position: absolute;
-        top: 94%;
-        margin-right: -50%;
-        transform: translate(-50%, -50%);
-        margin-top: 25px;
-        -webkit-transform: translate(-50%, -50%);
-        -moz-transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-        -o-transform: translate(-50%, -50%);
+        margin-right: 115px;
+        margin-top: 15px;
+    }
+    .hotel-img-1 {
+        margin-left: 115px;
+        margin-top: 90px;
     }
     .hotel-img-3 {
-        margin-top: 220px;
-        margin-left: 0;
-        position: absolute;
-        top: 100%;
-        left: 50%;
-        margin-right: -50%;
-        transform: translate(-50%, -50%);
-        -webkit-transform: translate(-50%, -50%);
-        -moz-transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-        -o-transform: translate(-50%, -50%);
+        margin-left: 20px;
     }
     .nav-section {
-        margin-top: 495px;
+        margin-bottom: 20px;
     }
     .news-bg-layer {
         height: 265px;
@@ -645,7 +612,7 @@ body {
     .news-topic-data {
         display: flex;
         flex-direction: row;
-        align-items: self-start;
+        align-items: flex-start;
     }
     .news-topic-date {
         margin-right: 20px;
@@ -677,32 +644,15 @@ body {
         height: 80px;
     }
     .hotel-img-1 {
-        margin-top: 0;
-        transform: translate(-50%, 75%);
-        -webkit-transform: translate(-50%, 75%);
-        -moz-transform: translate(-50%, 75%);
-        -ms-transform: translate(-50%, 75%);
-        -o-transform: translate(-50%, 75%);
+        margin-left: 65px;
+        margin-top: 155px;
     }
     .hotel-img-2 {
-        margin-top: 0;
-        transform: translate(-50%, -15%);
-        -webkit-transform: translate(-50%, -15%);
-        -moz-transform: translate(-50%, -15%);
-        -ms-transform: translate(-50%, -15%);
-        -o-transform: translate(-50%, -15%);
+        margin-right: 45px;
     }
     .hotel-img-3 {
-        margin-top: 0;
-        transform: translate(-50%, 65%);
-        -webkit-transform: translate(-50%, 65%);
-        -moz-transform: translate(-50%, 65%);
-        -ms-transform: translate(-50%, 65%);
-        -o-transform: translate(-50%, 65%);
-    }
-    .nav-section {
-        margin-top: 665px;
-        margin-bottom: 25px;
+        margin-left: -5px;
+        width: 270px;
     }
     .news-topic-text {
         font-size: 12px;
